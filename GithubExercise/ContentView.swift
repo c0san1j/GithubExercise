@@ -15,8 +15,9 @@ struct ContentView: View {
                 .scaledToFit()
             Text("Version 3.0")
                 .font(.largeTitle)
+            Rectangle()
         }
-        .foregroundColor(.red)
+        .foregroundColor(.green)
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 5)
