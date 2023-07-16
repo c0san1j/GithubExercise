@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var numberOfCircle = 6
     var body: some View {
         ZStack {
-            Color.indigo
+            Color.purple
                 .ignoresSafeArea()
             VStack {
                 
@@ -43,6 +43,12 @@ struct ContentView: View {
                                 
                                 Spacer()
                                 
+                                Divider()
+                                    .background(.black.opacity(0.75))
+                                    .padding()
+                                
+                                Spacer()
+                                
                                 Button {
                                     if numberOfCircle > 0 {
                                         numberOfCircle -= 1
@@ -58,8 +64,6 @@ struct ContentView: View {
                                 
                                 Spacer()
                             }
-                                .foregroundColor(.white)
-                                .tint(Color.blue)
                         )
                 }
                 .foregroundColor(.white)
