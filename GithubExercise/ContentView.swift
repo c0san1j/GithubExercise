@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var numberOfCircle = 0
+    @State private var numberOfCircle = 6
     var body: some View {
         ZStack {
-            Color.purple
+            Color.indigo
                 .ignoresSafeArea()
             VStack {
                 
